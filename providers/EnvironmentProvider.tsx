@@ -65,7 +65,7 @@ export function EnvironmentProvider({
   //   : query.host?.includes('test')
   //   ? 'testnet'
   //   : query.cluster || defaultCluster || process.env.BASE_CLUSTER
-  const cluster = 'devnet'
+  const cluster = 'mainnet-beta'
   const foundEnvironment = ENVIRONMENTS.find((e) => e.label === cluster)
   const [environment, setEnvironment] = useState<Environment>(
     foundEnvironment ?? ENVIRONMENTS[0]!
