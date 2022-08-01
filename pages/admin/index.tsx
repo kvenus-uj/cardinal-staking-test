@@ -199,8 +199,6 @@ function Admin() {
             <div className="grid grid-cols-3 gap-5">
               {!stakePools.isFetched && !stakePoolsMetadata.isFetched ? (
                 <>
-                  <Placeholder />
-                  <Placeholder />
                 </>
               ) : stakePoolsWithMetadata.length > 0 ||
                 stakePoolsWithoutMetadata.length > 0 ? (
